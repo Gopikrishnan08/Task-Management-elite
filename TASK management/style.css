@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    transition: 0.3s;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+button {
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+#darkModeToggle {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ✅ Improved Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+.dark-mode .task {
+    background: #444;
+    border-color: #666;
+}
+.dark-mode input, .dark-mode select, .dark-mode button {
+    background: #555;
+    color: white;
+    border-color: #777;
+}
+.dark-mode button {
+    background: #1e90ff;  /* Bright blue for contrast */
+}
+.dark-mode button:hover {
+    background: #007bff;
+}
+
